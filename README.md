@@ -223,3 +223,6 @@ Many branches will need to work with suppliers to buy inventory. For each suppli
 - [freeCodeCamp SQL Course](https://www.youtube.com/watch?v=HXV3zeQKqGY)
 - [What is key?](https://www.guru99.com/dbms-keys.html)
 - [Attrubute, August 12, 2020](https://www.techopedia.com/definition/1164/attribute-database-systems#:~:text=In%20relational%20databases%2C%20attributes%20are,to%20uniquely%20identify%20each%20item.)
+
+## TODO List
+- [ ] AWS linking
