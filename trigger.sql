@@ -1,4 +1,3 @@
-
 -- CREATE
 --     TRIGGER `event_name` BEFORE/AFTER INSERT/UPDATE/DELETE
 --     ON `database`.`table`
@@ -13,14 +12,16 @@ CREATE TABLE trigger_test (
 );
 
 
-DELIMITER $$ -- change DELEMETER to two dollor sign
+
+
+DELIMITER $$
 CREATE
     TRIGGER my_trigger BEFORE INSERT
     ON employee
     FOR EACH ROW BEGIN
         INSERT INTO trigger_test VALUES('added new employee');
     END$$
-DELIMITER ; -- back DELEMETER to semicolone
+DELIMITER ;
 INSERT INTO employee
 VALUES(109, 'Oscar', 'Martinez', '1968-02-19', 'M', 69000, 106, 3);
 
@@ -30,7 +31,7 @@ CREATE
     TRIGGER my_trigger BEFORE INSERT
     ON employee
     FOR EACH ROW BEGIN
-        INSERT INTO trigger_test VALUES(NEW.first_name); -- NEW is keyword that newly triggering something
+        INSERT INTO trigger_test VALUES(NEW.first_name);
     END$$
 DELIMITER ;
 INSERT INTO employee
